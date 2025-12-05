@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samtse College of Education</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .topbar {
+            background: #5888b9;
+            color: white;
+            padding: 0.5em;
+            text-align: center;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+            margin: 0;
+            padding: 0;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            padding: 0.3em 0.5em;
+        }
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+        .logo {
+            height: 100px;
+            margin: 10px 0;
+        }
+        .main-nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: white;
+            padding: 1em;
+            border-bottom: 1px solid #ddd;
+        }
+        .nav-section {
+            text-align: center;
+            padding: 0.8em;
+        }
+        .nav-section a {
+            display: block;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+        .nav-section p {
+            font-size: 0.8em;
+            color: #666;
+            margin: 5px 0 0;
+            white-space: nowrap;
+        }
+        .btn-red {
+            background-color: #e74c3c;
+            color: white;
+            padding: 0.8em 1.5em;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            display: inline-block;
+        }
+        .btn-red:hover {
+            background-color: #c0392b;
+        }
+        .banner {
+            background-color: #1565c0;
+            color: white;
+            text-align: center;
+            padding: 0.8em;
+            font-weight: bold;
+        }
+        .main-content {
+            display: flex;
+            max-width: 1200px;
+            margin: 2em auto;
+            padding: 0 2em;
+            gap: 3em;
+            align-items: flex-start;
+        }
+        .image-container {
+            flex: 1;
+            min-width: 300px;
+            background: #f9f9f9;
+            padding: 1em;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            display: block;
+        }
+        .greetings {
+            flex: 1;
+            min-width: 300px;
+            padding: 1em;
+        }
+        .greetings h2 {
+            color: #2c3e50;
+            margin-top: 0;
+            margin-bottom: 1em;
+            padding-bottom: 0.5em;
+            border-bottom: 2px solid #eee;
+        }
+        .greetings p {
+            margin: 0;
+            padding: 0;
+            text-align: justify;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 1024px) {
+            .main-nav {
+                flex-wrap: wrap;
+                padding: 1em 0.5em;
+            }
+            .nav-section {
+                padding: 0.5em;
+                flex: 1 1 25%;
+                box-sizing: border-box;
+            }
+            .main-content {
+                flex-direction: column;
+                padding: 0 1.5em;
+                gap: 2em;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                flex-wrap: wrap;
+                gap: 1em;
+                padding: 0.5em;
+            }
+            .nav-links li {
+                flex: 1 1 30%;
+                text-align: center;
+            }
+            .main-nav {
+                flex-direction: column;
+                align-items: center;
+                padding: 1em 0.5em;
+            }
+            .nav-section {
+                width: 100%;
+                padding: 0.5em 0;
+                border-bottom: 1px solid #eee;
+            }
+            .nav-section:last-child {
+                border-bottom: none;
+            }
+            .main-content {
+                padding: 0 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="topbar">
+        <ul class="nav-links"> 
+            <li><a href="#">People</a></li>
+            <li><a href="#">Library (Intranet)</a></li>
+            <li><a href="#">Announcement</a></li>
+            <li><a href="#">RUB Policy Documents</a></li>
+            <li><a href="#">Downloads</a></li>
+            <li><a href="#">Help Desk</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="main-nav">
+        <div>
+            <img src="https://www.sce.edu.bt/wp-content/uploads/2025/05/SCE-LOGO-EDIT1.png" 
+                 alt="Samtse College of Education Logo" 
+                 class="logo">
+        </div>
+        <div class="nav-section">
+            <a href="#">ABOUT SCE</a>
+            <p>Who we are and what we do</p>
+        </div>
+        <div class="nav-section">
+            <a href="programes.html">PROGRAMMES</a>
+            <p>About the programmes we offer</p>
+        </div>
+        <div class="nav-section">
+            <a href="#">DEPARTMENTS</a>
+            <p>Our academic departments</p>
+        </div>
+        <div class="nav-section">
+            <a href="#">RESEARCH</a>
+            <p>Our research activities & collaborations</p>
+        </div>
+        <div class="nav-section">
+            <a href="#">ADMISSION</a>
+            <p>Admission dates and eligibility criteria</p>
+        </div>
+        <div class="nav-section">
+            <a href="#" class="btn-red">STRATEGIC PLAN</a>
+        </div>
+    </div>
+
+    <div class="banner">
+        Welcome to Samtse College of Education
+    </div>
+
+    <div class="main-content">
+        <div class="image-container">
+            <img src="https://www.sce.edu.bt/wp-content/uploads/2025/11/70th-Birthday-Fecilitation-K42.jpg" 
+                 alt="70th Birthday Felicitation at SCE"
+                 title="70th Birthday Felicitation at Samtse College of Education">
+        </div>
+
+        <div class="greetings">
+            <h2>Greetings!</h2>
+            <p>
+                Samtse College of Education was founded by Bhutan's Third Dharma King Late His Majesty Jigme Dorji
+                Wangchuck. Launched as a Teacher Training Institute on 29th May 1968, the institute commenced its educational
+                journey with only 41 students and a few teacher educators. Since its establishment the College has
+                given the country's education system over 5000 graduates with primary teaching certificate, bachelors,
+                diploma, postgraduate diploma, and Masters qualifications. The rich and varied learning
+                experiences we offer our students are inspired by our philosophical commitment to the wisdom of right View,
+                right Contemplation and right Action which collectively can cause the arising of the right Result.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

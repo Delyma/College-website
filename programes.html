@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Programmes - Samtse College of Education</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+        .topbar {
+            background: #5888b9;
+            color: white;
+            padding: 0.5em;
+            text-align: center;
+            font-size: 0.9em;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 1.5em;
+            margin: 0;
+            padding: 0;
+            flex-wrap: wrap;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 0.9em;
+            white-space: nowrap;
+        }
+        .main-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 0.5em 2em;
+            border-bottom: 1px solid #ddd;
+            flex-wrap: wrap;
+        }
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+        .logo {
+            height: 80px;
+            margin-right: 1em;
+        }
+        .nav-sections {
+            display: flex;
+            gap: 1.5em;
+            flex-wrap: wrap;
+        }
+        .nav-section {
+            text-align: center;
+            padding: 0.5em 0;
+        }
+        .nav-section a {
+            display: block;
+            color: #2c3e50;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9em;
+            white-space: nowrap;
+        }
+        .nav-section p {
+            font-size: 0.7em;
+            color: #666;
+            margin: 0.2em 0 0;
+            white-space: nowrap;
+        }
+        .btn-red {
+            background-color: #e74c3c;
+            color: white;
+            padding: 0.6em 1.2em;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9em;
+            white-space: nowrap;
+        }
+        .banner {
+            background-color: #1565c0;
+            color: white;
+            text-align: center;
+            padding: 2em 1em;
+            margin-bottom: 2em;
+        }
+        .banner h1 {
+            margin: 0;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .breadcrumb {
+            padding: 1em 2em;
+            font-size: 0.9em;
+            color: #666;
+            border-bottom: 1px solid #eee;
+        }
+        .breadcrumb a {
+            color: #1565c0;
+            text-decoration: none;
+        }
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2em 4em;
+        }
+        .program-category {
+            margin-bottom: 2.5em;
+        }
+        .program-category h2 {
+            color: #2c3e50;
+            font-size: 1.5em;
+            margin-bottom: 0.8em;
+            padding-bottom: 0.3em;
+            border-bottom: 2px solid #eee;
+        }
+        .program-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .program-list li {
+            padding: 0.5em 0;
+            padding-left: 1.5em;
+            position: relative;
+            font-size: 1.1em;
+            line-height: 1.5;
+        }
+        .program-list li:before {
+            content: "•";
+            color: #e74c3c;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        .program-note {
+            font-style: italic;
+            color: #666;
+            margin-left: 1.5em;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 1024px) {
+            .main-nav {
+                flex-direction: column;
+                padding: 1em;
+            }
+            .nav-sections {
+                width: 100%;
+                justify-content: center;
+                margin-top: 1em;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 1em;
+                padding: 0.5em;
+                font-size: 0.8em;
+            }
+            .nav-sections {
+                flex-direction: column;
+                gap: 0.5em;
+            }
+            .nav-section {
+                padding: 0.3em 0;
+            }
+            .banner h1 {
+                font-size: 1.5em;
+            }
+            .content {
+                padding: 0 1em 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="topbar">
+        <ul class="nav-links">
+            <li><a href="#">People</a></li>
+            <li><a href="#">Library (Intranet)</a></li>
+            <li><a href="#">Announcement</a></li>
+            <li><a href="#">RUB Policy Documents</a></li>
+            <li><a href="#">Downloads</a></li>
+            <li><a href="#">Help Desk</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="main-nav">
+        <div class="logo-container">
+            <img src="https://www.sce.edu.bt/wp-content/uploads/2025/05/SCE-LOGO-EDIT1.png" 
+                 alt="Samtse College of Education Logo" 
+                 class="logo">
+        </div>
+        <div class="nav-sections">
+            <div class="nav-section">
+                <a href="College.html">ABOUT SCE</a>
+                <p>Who we are and what we do</p>
+            </div>
+            <div class="nav-section">
+                <a href="programes.html">PROGRAMMES</a>
+                <p>About the programmes we offer</p>
+            </div>
+            <div class="nav-section">
+                <a href="#">DEPARTMENTS</a>
+                <p>Our academic departments</p>
+            </div>
+            <div class="nav-section">
+                <a href="#">RESEARCH</a>
+                <p>Our research activities</p>
+            </div>
+            <div class="nav-section">
+                <a href="#">ADMISSION</a>
+                <p>Admission information</p>
+            </div>
+            <div class="nav-section">
+                <a href="#" class="btn-red">STRATEGIC PLAN</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner">
+        <h1>ACADEMIC PROGRAMMES</h1>
+    </div>
+
+    <div class="breadcrumb">
+        <a href="#">Home</a> &gt; Academic Programmes
+    </div>
+
+    <div class="content">
+        <div class="program-category">
+            <h2>POSTGRADUATE PROGRAMMES</h2>
+            <ul class="program-list">
+                <li>M.Ed in Science (Biology/Chemistry/Physics/Mathematics)</li>
+                <li>M.Ed in Geography</li>
+                <li>M.Ed in English</li>
+                <li>Postgraduate Diploma in Education</li>
+                <li>Postgraduate Diploma in Contemplative Counselling Psychology</li>
+                <li>Postgraduate Certificate in Higher Education (PgCert in HE)</li>
+            </ul>
+        </div>
+
+        <div class="program-category">
+            <h2>UNDERGRADUATE PROGRAMMES</h2>
+            <ul class="program-list">
+                <li>B.A in Social Work Education 
+                    <span class="program-note">(No new intake for the programme)</span>
+                </li>
+                <li>BEd (S) IT</li>
+                <li>BEd (S) Arts (English/Geography and English/History)</li>
+                <li>BEd (S) Science (Biology/Chemistry and Math's/Physics)</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
